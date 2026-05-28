@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Damiana Bolos Caseiros</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="drip-top"></div>
+
+  <div class="hero-badge">
+    <div class="whisk">🥄</div>
+    <div class="heart">♥</div>
+  </div>
+
+  <h1>Damiana Bolos</h1>
+  <h2>Bolos Caseiros</h2>
+  <p>✨ Feitos com amor, entregues com carinho ✨</p>
+
+  <a href="#cardapio" class="hero-cta">Ver Cardápio 🎂</a>
+
+  <div class="drip-bottom"></div>
+</section>
+
+
+<!-- ═══ CARROSSEL — BOLOS COMEMORATIVOS ═══ -->
+<section class="carousel-section" id="comemorativos">
+  <div class="section-header">
+    <h2>🎉 Bolos Comemorativos</h2>
+    <p>Especiais para cada momento inesquecível</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-btn prev" onclick="slide(-1)">&#8249;</button>
+
+    <div class="carousel-track" id="carouselTrack">
+
+      <div class="cake-card">
+        <div class="cake-img">
+          🎂
+          <span class="cake-tag">Popular</span>
+        </div>
+        <div class="cake-info">
+          <div class="cake-name">Bolo Piscina</div>
+          <div class="cake-desc">Recheio surpresa, cobertura especial e efeito "piscina" que encanta a todos</div>
+          <div class="cake-price">R$ 30,00 <span>/ unidade</span></div>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <div class="cake-img" style="background: linear-gradient(135deg, #8B0000, #5C2D0E);">
+          🌋
+          <span class="cake-tag">Novidade</span>
+        </div>
+        <div class="cake-info">
+          <div class="cake-name">Bolo Vulcão</div>
+          <div class="cake-desc">Efeito vulcão com calda quente que escorre — perfeito para surpreender</div>
+          <div class="cake-price">R$ 30,00 <span>/ unidade</span></div>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <div class="cake-img" style="background: linear-gradient(135deg, #D4813A, #8B4513);">
+          👣
+          <span class="cake-tag">Especial</span>
+        </div>
+        <div class="cake-info">
+          <div class="cake-name">Bolo Pé de Moça</div>
+          <div class="cake-desc">Combinação irresistível de doce de leite e coco — um clássico que nunca sai de moda</div>
+          <div class="cake-price">R$ 25,00 <span>/ unidade</span></div>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <div class="cake-img" style="background: linear-gradient(135deg, #E8437A, #C0184E);">
+          🍫
+          <span class="cake-tag">Bestseller</span>
+        </div>
+        <div class="cake-info">
+          <div class="cake-name">Bolo Ameixa com Chocolate</div>
+          <div class="cake-desc">Ameixa e chocolate juntos numa combinação sofisticada e deliciosa</div>
+          <div class="cake-price">R$ 20,00 <span>/ unidade</span></div>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <div class="cake-img" style="background: linear-gradient(135deg, #FFD700, #D4813A);">
+          🍍
+          <span class="cake-tag">Favorito</span>
+        </div>
+        <div class="cake-info">
+          <div class="cake-name">Bolo Abacaxi Caramelizado</div>
+          <div class="cake-desc">Abacaxi fresquinho caramelizado com açúcar mascavo — tropical e irresistível</div>
+          <div class="cake-price">R$ 20,00 <span>/ unidade</span></div>
+        </div>
+      </div>
+
+      <div class="cake-card">
+        <div class="cake-img" style="background: linear-gradient(135deg, #C0184E, #8B0000);">
+          🥜
+          <span class="cake-tag">Regional</span>
+        </div>
+        <div class="cake-info">
+          <div class="cake-name">Bolo de Paçoca com Cobertura</div>
+          <div class="cake-desc">O sabor do nordeste em cada fatia — paçoca cremosa com cobertura especial</div>
+          <div class="cake-price">R$ 20,00 <span>/ unidade</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-btn next" onclick="slide(1)">&#8250;</button>
+  </div>
+
+  <div class="carousel-dots" id="dots"></div>
+</section>
+
+
+<!-- ═══ CARDÁPIO TRADICIONAL ═══ -->
+<section class="menu-section" id="cardapio">
+  <div class="section-header">
+    <h2>🍰 Cardápio Completo</h2>
+    <p>Nossos bolos artesanais feitos todo dia com ingredientes frescos</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="menu-grid">
+
+    <!-- SEM COBERTURA -->
+    <div class="menu-col">
+      <h3>🎀 Sem Cobertura</h3>
+
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍰</span><span class="menu-item-name">Bolo Tradicional</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 15</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍮</span><span class="menu-item-name">Bolo de Goma</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 15</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍫</span><span class="menu-item-name">Bolo de Chocolate</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🌽</span><span class="menu-item-name">Bolo de Milho</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🐜</span><span class="menu-item-name">Bolo Formigueiro</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🎂</span><span class="menu-item-name">Bolo Mesclado</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🥕</span><span class="menu-item-name">Bolo de Cenoura</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍊</span><span class="menu-item-name">Bolo de Laranja</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍋</span><span class="menu-item-name">Bolo de Limão</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 16</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">☕</span><span class="menu-item-name">Bolo de Café</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 18</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🥛</span><span class="menu-item-name">Bolo de Leite</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 18</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🌿</span><span class="menu-item-name">Bolo de Macaxeira</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 18</span>
+      </div>
+    </div>
+
+    <!-- COM COBERTURA -->
+    <div class="menu-col">
+      <h3>✨ Com Cobertura</h3>
+
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍫</span><span class="menu-item-name">Chocolate c/ cobertura</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🥕🍫</span><span class="menu-item-name">Cenoura c/ choc.</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍊🍫</span><span class="menu-item-name">Laranja c/ choc.</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🥜</span><span class="menu-item-name">Paçoca c/ cobertura</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍋</span><span class="menu-item-name">Limão c/ cobertura</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍫</span><span class="menu-item-name">Ameixa c/ chocolate</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-left"><span class="menu-item-emoji">🍍</span><span class="menu-item-name">Abacaxi caramelizado</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price">R$ 20</span>
+      </div>
+      <div class="menu-item" style="background: var(--pink-pale);">
+        <div class="menu-item-left"><span class="menu-item-emoji">👣</span><span class="menu-item-name">Bolo Pé de Moça</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price" style="color: var(--chocolate);">R$ 25</span>
+      </div>
+      <div class="menu-item" style="background: var(--pink-pale);">
+        <div class="menu-item-left"><span class="menu-item-emoji">🏊</span><span class="menu-item-name">Bolo Piscina</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price" style="color: var(--chocolate);">R$ 30</span>
+      </div>
+      <div class="menu-item" style="background: var(--pink-pale);">
+        <div class="menu-item-left"><span class="menu-item-emoji">🌋</span><span class="menu-item-name">Bolo Vulcão</span></div>
+        <div class="price-dot"></div>
+        <span class="menu-item-price" style="color: var(--chocolate);">R$ 30</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ PAYMENT + CONTACT ═══ -->
+<div class="payment-banner">
+  <div class="payment-item">
+    <div class="payment-icon">💵</div>
+    <div>
+      <h4>Dinheiro e Pix</h4>
+      <p>Aceitamos as duas formas</p>
+    </div>
+  </div>
+  <div class="payment-item">
+    <div class="payment-icon">📲</div>
+    <div>
+      <h4>Faça sua encomenda!</h4>
+      <p>(87) 98133-3735</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>© 2025 <strong>Damiana Bolos Caseiros</strong> — Feitos com amor 🍰</p>
+  <p style="margin-top:6px;">Contato: (87) 98133-3735</p>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/5587981333735" class="whatsapp-btn" target="_blank" title="Falar no WhatsApp">💬</a>
+
+<script src="./script.js"></script>
+</body>
+</html>
