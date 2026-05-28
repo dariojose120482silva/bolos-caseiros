@@ -59,14 +59,11 @@ body {
 }
 
 .logo img {
-    width: 52%;
-    height: 52%;
+    width: 50%;
+    height: 50%;
     margin-bottom: 10px;
-   
 }
 
-.logo h1 {
-}
 
 .logo .whisk {
     font-size: 2.9rem;
