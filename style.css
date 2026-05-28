@@ -58,10 +58,18 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 40%, 95% 80%, 90% 45%, 85% 90%, 80% 55%, 75% 85%, 70% 50%, 65% 80%, 60% 45%, 55% 85%, 50% 40%, 45% 90%, 40% 50%, 35% 85%, 30% 45%, 25% 90%, 20% 55%, 15% 80%, 10% 40%, 5% 85%, 0% 0 50%);
 }
 
+.logo {
+    width: 200px;
+    /* ← defina o tamanho do container */
+    height: 200px;
+}
+
 .logo img {
-    width: 30%;
-    height: 30%;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
