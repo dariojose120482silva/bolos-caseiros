@@ -11,6 +11,10 @@
     --text-dark: #2C1810;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,7 +59,7 @@ body {
     right: 0;
     height: 50px;
     background: var(--chocolate);
-    clip-path: polygon(0 0, 100% 0, 100% 40%, 95% 80%, 90% 45%, 85% 90%, 80% 55%, 75% 85%, 70% 50%, 65% 80%, 60% 45%, 55% 85%, 50% 40%, 45% 90%, 40% 50%, 35% 85%, 30% 45%, 25% 90%, 20% 55%, 15% 80%, 10% 40%, 5% 85%, 0% 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 95% 80%, 90% 45%, 85% 90%, 80% 55%, 75% 85%, 70% 50%, 65% 80%, 60% 45%, 55% 85%, 50% 40%, 45% 90%, 40% 50%, 35% 85%, 30% 45%, 25% 90%, 20% 55%, 15% 80%, 10% 40%, 5% 85%, 0%  50%);
 }
 
 .logo {
@@ -65,8 +69,8 @@ body {
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
+    width: 190px;
+    height: 190px;
     margin-bottom: 10px;
     border-radius: 50%;
     object-fit: cover;
@@ -453,8 +457,10 @@ body {
 
 .payment-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 14px;
+    justify-content: center;
+    gap: 12px;
 }
 
 .payment-icon {
@@ -511,14 +517,244 @@ footer strong {
     animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
+.whatsapp-btn svg {
+    width: 32px;
+    height: 32px;
+}
 
-    0%,
-    100% {
-        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-    }
 
+
+/*////////////////*/
+/* Configurações Gerais da Seção */
+.menu-section {
+  background-color: #fdf6ec;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150%;
+  overflow-x: hidden;
+}
+
+.menu-item {
+ 
+    border-radius: 12px;
+   
+}
+
+/* Cabeçalho Centralizado */
+.menu-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu-header h2 {
+  font-size: 2.2rem;
+  color: #5c3a21;
+  margin-bottom: 10px;
+}
+
+.menu-header p {
+  color: #8c6239;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.gradient-line {
+  height: 4px;
+  width: 120px;
+  background: linear-gradient(to right, #d93d64, #f2a649);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* Container do Carrossel */
+.carousel-container {
+  width: 100%;
+  max-width: 480px; /* Alinhamento perfeito para telas mobile */
+  margin-bottom: 40px;
+}
+
+.carousel-container h3 {
+  font-size: 1.6rem;
+  color: #5c3a21;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fbcfe8;
+  padding-bottom: 8px;
+}
+
+/* Trilho do Carrossel (Efeito Deslizante Sem Loop) */
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px 5px;
+}
+
+
+
+/* Estrutura do Card de Item com Imagem */
+.menu-item {
+  flex: 0 0 88%; /* Deixa uma bordinha do próximo visível para incentivar o deslize */
+  scroll-snap-align: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(92, 58, 33, 0.06);
+  display: block; /* Empilha imagem e conteúdo se necessário no mobile */
+  padding: 10px;
+  border: 1px solid #f3ebd9;
+}
+
+/* Card Destacado (como o Bolo Pé de Moça da imagem) */
+.highlight-item {
+  background-color: #fbf0f8;
+  border: 1px solid #f9dbe7;
+}
+
+/* Tag IMG estilizada */
+.item-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Ajusta a foto sem distorcer */
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* Caixa de informações do bolo */
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Linha com Nome, Pontilhado e Preço */
+.item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  color: #3f2512;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted #e2d1bc;
+  margin: 0 10px;
+  position: relative;
+  top: 4px;
+}
+
+.price {
+  color: #d93d64;
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+
+/* Botão de Chamada para o WhatsApp */
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #ba2020;
+}
+
+
+
+
+.float-wpp {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 9999;  width: 50px;
+  height: 50px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(41, 232, 12, 0.918);
+transition: background-color 0.8s; /* ESSA LINHA ABAIXO É OBRIGATÓRIA: */
+  animation: flutuar  5s ease-in-out infinite;}
+
+.float-wpp:hover {
+  background-color: #ba2020;
+  box-shadow: 0 6px 24px rgba(32, 40, 186, 0.918);
+}
+
+@keyframes flutuar  {
+
+  0% {
+        transform: translateY(0);
+  }
     50% {
-        box-shadow: 0 4px 36px rgba(37, 211, 102, 0.7);
+        transform: translateY(-8px);
     }
+
+
+  100% {
+        transform: translateY(0);
+    }
+}
+
+  
+
+
+/* Conversão para lista no Desktop */
+@media (min-width: 768px) {
+  .carousel-track {
+    overflow-x: auto; /* Mantém o scroll horizontal no desktop */
+    scroll-behavior: smooth;
+  }
+  .menu-item {
+    flex: 0 0 35%; /* Ajusta o tamanho do card para desktop */
+    display: flex; /* No desktop coloca a imagem do lado do texto */
+    gap: 15px;
+  }
+  .item-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .item-info {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .payment-banner {
+    display: flex;
+}
+
+.payment-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
 }

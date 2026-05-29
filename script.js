@@ -30,9 +30,6 @@
 
   window.slide = (dir) => goTo(current + dir);
 
-  // Auto-slide
-  setInterval(() => goTo(current >= maxIndex() ? 0 : current + 1), 4000);
-  window.addEventListener('resize', () => goTo(Math.min(current, maxIndex())));
 
   // ── Smooth scroll for hero CTA ──
   document.querySelector('.hero-cta').addEventListener('click', e => {
